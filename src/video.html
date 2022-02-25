@@ -5,13 +5,21 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Batman</title>
+   
+    <link rel="icon" href="./materials/img/icon.png" type="image/png">
+
     <link rel="stylesheet" href="./css/normalize.css">
+    <link rel="stylesheet" href="./css/swiper-bundle.min.css"/>
+
     <link rel="stylesheet" href="./css/style.css"> 
+
+    <script defer src="./js/swiper-bundle.min.js"></script>
+    <script defer src="./js/script.js"></script>
 </head>
 <body>
     <header class="header">
 
-        <button class="header__burger"><img src="./materials/img/menu.svg" alt="Меню бургер" class="burger"></button>
+        <button class="burger"><img src="./materials/img/menu.svg" alt="Меню бургер" class="burger"></button>
 
         <nav class="header__navigation navigation">
 
@@ -43,14 +51,85 @@
                 </li>
             </ul>
         </nav>
-        <div class="mute">
-            <input class="mute__checkbox" type="checkbox" id="mute">
-            <label class="mute__label" for="mite"></label>
-        </div>
     </header>
 
-    <main class="main main__index">
-        <img src="./materials/img/logo.png" alt="Логотип к фильму Бетмен" class="logo" width="329" height="235">
+    <main class="main main_slider">
+        <div class="slider-main swiper">
+            <ul class="slider-main__list swiper-wrapper">
+                <li class="slider-main__item swiper-slide">
+                    <video class="slider-main__video" controls poster="./materials/video/trailer01.jpg">
+                        <source src="./materials/video/trailer01.webm" type="video/webm"> 
+                        <source src="./materials/video/trailer01.mp4" type="video/mp4"> 
+                    </video>
+                </li>
+                <li class="slider-main__item swiper-slide">
+                    <video class="slider-main__video" controls poster="./materials/video/trailer02.jpg">
+                        <source src="./materials/video/trailer02.webm" type="video/webm"> 
+                        <source src="./materials/video/trailer02.mp4" type="video/mp4"> 
+                    </video>
+                </li>
+                <li class="slider-main__item swiper-slide">
+                    <video class="slider-main__video" controls poster="./materials/video/trailer03.jpg">
+                        <source src="./materials/video/trailer03.webm" type="video/webm"> 
+                        <source src="./materials/video/trailer03.mp4" type="video/mp4"> 
+                    </video>
+                </li>
+                <li class="slider-main__item swiper-slide">
+                    <video class="slider-main__video" controls poster="./materials/video/tizer01.jpg">
+                        <source src="./materials/video/tizer01.webm" type="video/webm"> 
+                        <source src="./materials/video/tizer01.mp4" type="video/mp4"> 
+                    </video>
+                </li>
+                <li class="slider-main__item swiper-slide">
+                    <video class="slider-main__video" controls poster="./materials/video/tizer02.jpg">
+                        <source src="./materials/video/tizer02.webm" type="video/webm"> 
+                        <source src="./materials/video/tizer02.mp4" type="video/mp4"> 
+                    </video>
+                </li>
+                <li class="slider-main__item swiper-slide">
+                    <video class="slider-main__video" controls poster="./materials/video/tizer03.jpg">
+                        <source src="./materials/video/tizer03.webm" type="video/webm"> 
+                        <source src="./materials/video/tizer03.mp4" type="video/mp4"> 
+                    </video>
+                </li>
+                <li class="slider-main__item swiper-slide">
+                    <video class="slider-main__video" controls poster="./materials/video/tizer04.jpg">
+                        <source src="./materials/video/tizer04.webm" type="video/webm"> 
+                        <source src="./materials/video/tizer04.mp4" type="video/mp4"> 
+                    </video>
+                </li>
+            </ul>
+        </div>
+
+        <div class="pagination">
+            <button class="pagination__arrow"></button>
+
+            <div class="slider-thumbs swiper">
+                <ul class="slider-thumbs__list swiper-wrapper">
+                    <li class="slider-thumbs__item swiper-slide">
+                        <img src="./materials/video/trailer01.jpg" alt="превью трейлера" class="slider-thumbs__img" width="260" height="100">
+                    </li>
+                    <li class="slider-thumbs__item swiper-slide">
+                        <img src="./materials/video/trailer02.jpg" alt="превью трейлера" class="slider-thumbs__img" width="260" height="100">
+                    </li>
+                    <li class="slider-thumbs__item swiper-slide">
+                        <img src="./materials/video/trailer03.jpg" alt="превью трейлера" class="slider-thumbs__img" width="260" height="100">
+                    </li>
+                    <li class="slider-thumbs__item swiper-slide">
+                        <img src="./materials/video/tizer01.jpg" alt="превью тизера" class="slider-thumbs__img" width="260" height="100">
+                    </li>
+                    <li class="slider-thumbs__item swiper-slide">
+                        <img src="./materials/video/tizer02.jpg" alt="превью тизера" class="slider-thumbs__img" width="260" height="100">
+                    </li>
+                    <li class="slider-thumbs__item swiper-slide">
+                        <img src="./materials/video/tizer03.jpg" alt="превью тизера" class="slider-thumbs__img" width="260" height="100">
+                    </li>
+                    <li class="slider-thumbs__item swiper-slide">
+                        <img src="./materials/video/tizer04.jpg" alt="превью тизера" class="slider-thumbs__img" width="260" height="100">
+                    </li>
+                </ul>
+            </div>
+        </div>
     </main>
 
     <footer class="footer">
